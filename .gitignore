@@ -1,0 +1,18 @@
+# Raw medical data, individual predictions, weights, and credentials stay local.
+private/
+data/
+work/
+*.npz
+*.npy
+*.parquet
+*.dcm
+*.pt
+*.pth
+.env*
+*token*
+*credential*
+kaggle.json
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+*.pyc

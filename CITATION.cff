@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the competition and original checkpoint authors as well as this retrospective evaluation."
+title: "RSNA Knee Research: Retrospective Ablation and Per-class Evaluation"
+type: software
+authors:
+  - family-names: Lu
+    given-names: Xinyi
+date-released: 2026-10-21
+repository-code: "https://github.com/andyyyyaa/rsna-knee-research"
+version: 0.1.0
