@@ -1,0 +1,84 @@
+{
+  "cohort_n": 58,
+  "labels": [
+    "ACL",
+    "MCL",
+    "Medial Meniscus",
+    "Lateral Meniscus",
+    "Medial OA",
+    "Lateral OA",
+    "PF OA",
+    "Effusion",
+    "Synovitis",
+    "Baker's",
+    "Contusion",
+    "Fracture"
+  ],
+  "primary_comparison": "extra_kawaharataishi_swa vs baseline_v13_v15",
+  "analysis_type": "Retrospective analysis of cached GPU predictions; no new model training or GPU inference",
+  "seed": 20261021,
+  "valid_resamples": 2000,
+  "attempted_resamples": 2000,
+  "unit": "study",
+  "independent_validation": false,
+  "confidence_intervals": "Pointwise 95% percentile bootstrap; conditional on fixed weights, cohort, checkpoints and prior selection; not multiplicity adjusted",
+  "bootstrap_positive_fraction_is_not_generalization_probability": true,
+  "recall": "Recall/precision/specificity at fixed average-percentile-rank >=0.5; uncalibrated descriptive operating point",
+  "production_baseline_max_abs_error": 1.1102230246251565e-16,
+  "reranked_primary_delta": {
+    "mean": 0.002824437213846495,
+    "ci95": [
+      -0.0007509970053896355,
+      0.006916001456309679
+    ],
+    "positive_fraction": 0.942
+  },
+  "upstream_group_runtime": {
+    "macro_auc": 0.9405952637648828,
+    "macro_delta": 0.0022259279364112983,
+    "class_delta": {
+      "ACL": 0.002450980392156854,
+      "MCL": 0.0045351473922902175,
+      "Medial Meniscus": 0.0,
+      "Lateral Meniscus": 0.013664596273291973,
+      "Medial OA": 0.0031007751937983663,
+      "Lateral OA": 0.0,
+      "PF OA": 0.002574002574002643,
+      "Effusion": -0.00496894409937898,
+      "Synovitis": 0.010752688172043001,
+      "Baker's": 0.0,
+      "Contusion": -0.005398110661268496,
+      "Fracture": 0.0
+    },
+    "paired_bootstrap": {
+      "probability_positive": 0.9175,
+      "ci95": [
+        -0.0010056472457172074,
+        0.005772263950056241
+      ],
+      "valid_resamples": 2000,
+      "mean_delta": 0.002256818054290337
+    },
+    "reranked_bootstrap": {
+      "probability_positive": 0.942,
+      "ci95": [
+        -0.0007509970053896355,
+        0.006916001456309679
+      ]
+    },
+    "projected1300_seconds_with_margin": 40372.430095014905,
+    "stage_seconds": {
+      "5": 113.42793560028076,
+      "8": 59.382041454315186,
+      "10": 90.00234889984131,
+      "11": 1096.6566433906555,
+      "19": 113.16286253929138
+    }
+  },
+  "validations": [
+    "Exact production baseline and SWA score parity within 1e-12",
+    "All 18 variants cross-checked against scikit-learn",
+    "Exact 58-study coverage and binary complete labels",
+    "All baseline Reader studies marked valid"
+  ]
+}

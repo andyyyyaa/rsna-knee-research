@@ -1,0 +1,21 @@
+submission_id,date_utc,notebook,recipe,status,public_score,error_present
+57497535,2026-10-21 21:22:51.667000,submission.csv,V16 SWA inference,SubmissionStatus.PENDING,,False
+57465901,2026-10-21 04:44:54.747000,submission.csv,V15 efficient V13 recipe,SubmissionStatus.COMPLETE,0.958,False
+57453614,2026-10-20 21:28:26.710000,submission.csv,V14 dense R6 validation (exception),SubmissionStatus.COMPLETE,,True
+57418066,2026-10-20 02:17:03.183000,submission.csv,"V13 R6 + Reader, R7 removed",SubmissionStatus.COMPLETE,0.958,False
+57402243,2026-10-19 16:17:17.647000,submission.csv,V12 version 3 reliability revision,SubmissionStatus.COMPLETE,0.958,False
+57329292,2026-10-17 23:43:45.503000,submission.csv,Local Fivefold Rank MIL version 3,SubmissionStatus.COMPLETE,0.873,False
+57323096,2026-10-17 19:13:56.050000,submission.csv,V10 Local Luna Member version 2,SubmissionStatus.COMPLETE,0.952,False
+57295184,2026-10-17 04:31:47.620000,submission.csv,V12 version 1,SubmissionStatus.COMPLETE,0.958,False
+57284682,2026-10-16 22:08:05.750000,submission.csv,Gold Medal Opt Gold58 weights,SubmissionStatus.COMPLETE,0.957,False
+57243024,2026-10-15 20:08:40.720000,submission.csv,V11 R6 inputs fixed,SubmissionStatus.COMPLETE,0.957,False
+57242569,2026-10-15 19:47:07.350000,submission.csv,V11 first version (exception),SubmissionStatus.COMPLETE,,True
+57124328,2026-10-13 00:26:51.397000,submission.csv,V9 R7 Dual + S224,SubmissionStatus.COMPLETE,0.956,False
+57092562,2026-10-12 02:28:49.650000,submission.csv,Earlier account submission,SubmissionStatus.COMPLETE,0.954,False
+57083534,2026-10-11 19:08:54.530000,submission.csv,Earlier account submission,SubmissionStatus.COMPLETE,0.954,False
+57081271,2026-10-11 17:33:41.627000,submission.csv,Earlier account submission,SubmissionStatus.COMPLETE,,True
+57069290,2026-10-11 09:13:36.433000,submission.csv,Earlier account submission,SubmissionStatus.COMPLETE,,True
+57049667,2026-10-10 18:07:31.553000,submission.csv,Earlier account submission,SubmissionStatus.COMPLETE,0.949,False
+57035602,2026-10-10 07:45:01.033000,submission.csv,Earlier account submission,SubmissionStatus.COMPLETE,0.949,False
+57034366,2026-10-10 07:00:45.487000,submission.csv,Earlier account submission,SubmissionStatus.COMPLETE,0.946,False
+57022009,2026-10-09 21:37:43.047000,submission.csv,Earlier account submission,SubmissionStatus.COMPLETE,0.950,False

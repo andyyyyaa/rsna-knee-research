@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "main_evaluation": "18 variants and 216 per-class metric rows computed from actual cached predictions; scikit-learn cross-check passed",
+  "unit_tests": 6,
+  "executed_notebook_code_cells": 7,
+  "notebook_error_outputs": 0,
+  "figures": 6,
+  "figure_formats": [
+    "PNG",
+    "SVG"
+  ],
+  "visual_review": "All six standalone figures inspected; notebook HTML summary, results table and embedded ablation figure inspected in Chrome",
+  "independent_patient_validation": false,
+  "noise_or_intensity_corruption_run": false,
+  "peak_gpu_memory_measured": false
+}

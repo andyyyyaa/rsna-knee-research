@@ -1,0 +1,16 @@
+{
+  "source": "https://www.kaggle.com/code/andyyyyaa/rsna-apex-parameter-validation?scriptVersionId=356976389",
+  "archived_inference_only": true,
+  "images_reprocessed_in_this_analysis": false,
+  "model_family": "Legacy Apex",
+  "scope": "Resolution, FOV, slice count, offset and flip sensitivity. No new noise/intensity corruption run.",
+  "raw_redistributed": false,
+  "input_hashes": {
+    "candidate_predictions.npz": "bf680f373814ab8a769e4f82eeba052a5c1d575777e4dd79ba6799ac0390f708",
+    "reader_views.npz": "681b44e56651f1764a1c8b1da79ff952705ef98199426dabd0d67bb951cf6c2a",
+    "reader_view_keys.json": "ce65b853f331d5b6a34f1539a29d85a8e5f30adef3bbd61e7cfb4b341207e3d1",
+    "labels.npy": "0ac256f92261592c0206c714cd3ba96b075c52c501e36fd570dfcd1237664570",
+    "study_ids.json": "11cc4bb4a1934fb8c0e826d17883bc7b0fa4100efe710bbca1f3af9b1544b860",
+    "experiment_results.csv": "eeed2518dd407723b0d2b5134710712db2c41d4716f7c64e91cedac68d4f1878"
+  }
+}

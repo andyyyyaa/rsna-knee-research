@@ -1,0 +1,148 @@
+{
+  "revision": "v16-extra-coat-fixed-screen-20261021",
+  "base_notebook": "andyyyyaa/rsna-knee-v15-efficient-v13-inference",
+  "base_script_version": 360646466,
+  "base_public_score_displayed": 0.958,
+  "evaluation_population": "58 officially complete-label training studies; reused development data, not independent CV",
+  "candidates": [
+    {
+      "id": "royalacecat",
+      "dataset": "manatoshoji03/rsna-knee-coat-extra",
+      "dataset_version": 1,
+      "filename": "raptor_ft_coat384_full_bs14.pt",
+      "author": "royalacecat",
+      "reported_license": "CC0-1.0",
+      "sha256": "df66a00b98a3b6cf9e8e4e83060b54b93ce1b6a4801f2cc3c7eeb56756dd3e5c",
+      "inference_config": {
+        "input_resolution": 384,
+        "evaluation_windows": 94,
+        "cached_volume_slices": 96,
+        "cached_image_size": 384,
+        "fov_mm": 140.0,
+        "normalization": "imagenet",
+        "tta": "anatomical mirror, probability mean",
+        "source": "checkpoint metadata where present, otherwise the fixed V13/V15 inference defaults requested by user",
+        "numerical_precision": "FP16 unless nonfinite; recompute same checkpoint in FP32 and retain FP32 per GPU thereafter"
+      }
+    },
+    {
+      "id": "syouyatobita_g233",
+      "dataset": "manatoshoji03/rsna-knee-coat-extra",
+      "dataset_version": 1,
+      "filename": "G233_gpu_resident__20261011T1435_coat320_nartinit_ft6_gemini_s42_full.pt",
+      "author": "syouyatobita",
+      "reported_license": "other; retain original per-file terms",
+      "sha256": "aec2a2d6e98f18fe3c4c2f7cb3e6e37ba44f7227441b43e33783011badef1b5a",
+      "inference_config": {
+        "input_resolution": 320,
+        "evaluation_windows": 106,
+        "cached_volume_slices": 96,
+        "cached_image_size": 384,
+        "fov_mm": 140.0,
+        "normalization": "imagenet",
+        "tta": "anatomical mirror, probability mean",
+        "source": "checkpoint metadata where present, otherwise the fixed V13/V15 inference defaults requested by user",
+        "numerical_precision": "FP16 unless nonfinite; recompute same checkpoint in FP32 and retain FP32 per GPU thereafter"
+      }
+    },
+    {
+      "id": "kawaharataishi_swa",
+      "dataset": "manatoshoji03/rsna-knee-coat-extra2",
+      "dataset_version": 1,
+      "filename": "coatnet_384_full_cohort_swa.pt",
+      "author": "kawaharataishi",
+      "reported_license": "CC0-1.0",
+      "sha256": "755ee7dd4f17d54f8bd7aa0caf713b3b8d65b6af6ea6660d2bda260639abafca",
+      "inference_config": {
+        "input_resolution": 384,
+        "evaluation_windows": 94,
+        "cached_volume_slices": 96,
+        "cached_image_size": 384,
+        "fov_mm": 140.0,
+        "normalization": "imagenet",
+        "tta": "anatomical mirror, probability mean",
+        "source": "checkpoint metadata where present, otherwise the fixed V13/V15 inference defaults requested by user",
+        "numerical_precision": "FP16 unless nonfinite; recompute same checkpoint in FP32 and retain FP32 per GPU thereafter"
+      }
+    },
+    {
+      "id": "tbongc",
+      "dataset": "manatoshoji03/rsna-knee-coat-extra2",
+      "dataset_version": 1,
+      "filename": "final_raptor_v10geo_v7w_f-1_s42_imagenet.pt",
+      "author": "tbongc",
+      "reported_license": "CC0-1.0, verified on the original author dataset Data Card",
+      "sha256": "1f43e71e1119c83f19191c19ec8ce47502b021d4c6c28e1ffb1cb9d1f8684874",
+      "source_url": "https://www.kaggle.com/datasets/tbongc/rsna-knee-raptor-v10geo-v7w-f-1-s42-imagenet",
+      "inference_config": {
+        "input_resolution": 384,
+        "evaluation_windows": 94,
+        "cached_volume_slices": 96,
+        "cached_image_size": 384,
+        "fov_mm": 140.0,
+        "normalization": "imagenet",
+        "tta": "anatomical mirror, probability mean",
+        "source": "checkpoint metadata where present, otherwise the fixed V13/V15 inference defaults requested by user",
+        "numerical_precision": "FP16 unless nonfinite; recompute same checkpoint in FP32 and retain FP32 per GPU thereafter"
+      }
+    }
+  ],
+  "fusion": {
+    "raptor_baseline": {
+      "nartaa_384": 0.65,
+      "nartaa_224": 0.35
+    },
+    "raptor_candidate": {
+      "nartaa_384": 0.5,
+      "nartaa_224": 0.25,
+      "mean_rank_of_all_passed_candidates": 0.25
+    },
+    "raptor_per_class": {
+      "default": 0.5,
+      "Medial OA": 0.5,
+      "Lateral OA": 0.2,
+      "PF OA": 0.6,
+      "Synovitis": 0.8,
+      "Baker's": 0.35
+    },
+    "reader_per_class": {
+      "Baker's": 0.035,
+      "Contusion": 0.03,
+      "Medial OA": 0.025,
+      "ACL": 0.025,
+      "Medial Meniscus": 0.02,
+      "MCL": 0.02,
+      "Lateral Meniscus": 0.008,
+      "Fracture": 0.008,
+      "Lateral OA": 0.008,
+      "PF OA": 0.008,
+      "Effusion": 0.004,
+      "Synovitis": 0.003
+    },
+    "r6": "V15 unchanged: manifest stride1, four folds, flip TTA, trained stackers",
+    "extra_failure_policy": "Any selected extra model fails or exceeds its time gate: restore the complete V15 Raptor slot for that run. Never silently redistribute its share."
+  },
+  "screen": {
+    "single_model_macro_auc_min": 0.92,
+    "single_model_macro_auc_suspicion_above": 0.97,
+    "mean_spearman_with_base_384_strictly_below": 0.95,
+    "ensemble_macro_auc_delta_min": 0.002,
+    "paired_bootstrap_probability_positive_min": 0.8,
+    "minimum_per_class_delta": -0.01,
+    "bootstrap_seed": 20261021,
+    "bootstrap_valid_resamples": 2000,
+    "primary_bootstrap": "paired study resampling of fixed final predictions; each resample must contain both labels in all twelve classes",
+    "secondary_bootstrap": "rerank all branches within each resample as a sensitivity check",
+    "suspicion_policy": "Above0.97 is a warning, not proof of leakage. Do not use that model's Gold58 improvement to automatically approve this submission. Record training provenance separately.",
+    "combined_gate": "Each retained candidate must pass individually; the fixed equal-rank group must also pass the same ensemble delta, probability and per-class thresholds. No subset or coefficient search."
+  },
+  "runtime": {
+    "hidden_studies_planning": 1300,
+    "scale_from_58": 22.413793103448278,
+    "total_limit_seconds": 27000,
+    "notebook_work_deadline_seconds": 26820,
+    "projection_margin_factor": 1.1,
+    "projection_margin_seconds": 600,
+    "cache_rule": "Reuse byte-identical V15 384-volume/mask cache before 224 consumes and removes it. If training geometry differs, use the matching documented preprocessing, record separate decode cost and do not call it a cache hit."
+  }
+}

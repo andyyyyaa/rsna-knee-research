@@ -1,0 +1,47 @@
+{
+  "official_studies": 4407,
+  "complete_label_studies": 58,
+  "gold_studies": 58,
+  "study_ids_unique": true,
+  "official_gold_labels_match": true,
+  "gold_is_subset_of_official_training": true,
+  "official_metadata_has_patient_identifier": false,
+  "metadata_columns": [
+    "StudyInstanceUID",
+    "Report",
+    "ACL",
+    "MCL",
+    "Medial Meniscus",
+    "Lateral Meniscus",
+    "Medial OA",
+    "Lateral OA",
+    "PF OA",
+    "Effusion",
+    "Synovitis",
+    "Baker's",
+    "Contusion",
+    "Fracture"
+  ],
+  "normalized_report_hash_overlap_gold_vs_other_studies": 1,
+  "patient_disjointness": "NOT_VERIFIABLE: official train table has StudyInstanceUID and reports, no stable patient identifier",
+  "public_checkpoint_training_membership": "UNKNOWN: fold names and checkpoint filenames do not prove Gold58 exclusion",
+  "upstream_selection": "Gold58 reused for checkpoint/candidate selection; all intervals are conditional development estimates",
+  "report_group_is_patient_id": false,
+  "input_hashes": {
+    "train.csv": "8ca2203c0e9d61c080c7a314c7cdb51c1b03a1d9eb4770819f7f34af53ef4e33",
+    "v16_gold_targets.csv": "a3ca7df32d43ee7c683091162b1839ea8308d802bea3f2b437f4908d9cbcb079"
+  },
+  "historical_local_adapter_split": {
+    "train_studies": 1536,
+    "dev_studies": 256,
+    "train_dev_study_overlap": 0,
+    "gold_train_overlap": 0,
+    "gold_dev_overlap": 0,
+    "missing_train_ids": 0,
+    "missing_dev_ids": 0,
+    "normalized_report_hash_train_dev_overlap": 0,
+    "declared_group_column": "ReportGroupHash",
+    "scope": "Historical local adapter split only; does not validate current public checkpoints or patient separation",
+    "split_sha256": "717ccf1b838520bcd3beeeb89eb728b8bc056b558e7748f739132e2683977d5c"
+  }
+}

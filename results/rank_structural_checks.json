@@ -1,0 +1,22 @@
+{
+  "without_224": {
+    "changed_rank_cells": 376,
+    "maximum_rank_difference": 0.10344827586206895,
+    "changed_positive_negative_pair_orderings": 56
+  },
+  "without_r6": {
+    "changed_rank_cells": 601,
+    "maximum_rank_difference": 0.4137931034482759,
+    "changed_positive_negative_pair_orderings": 267
+  },
+  "without_reader": {
+    "changed_rank_cells": 30,
+    "maximum_rank_difference": 0.017241379310344827,
+    "changed_positive_negative_pair_orderings": 0
+  },
+  "extra_kawaharataishi_swa": {
+    "changed_rank_cells": 382,
+    "maximum_rank_difference": 0.10344827586206896,
+    "changed_positive_negative_pair_orderings": 62
+  }
+}

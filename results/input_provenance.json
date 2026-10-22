@@ -1,0 +1,104 @@
+{
+  "inputs": [
+    {
+      "filename": "v16_gold_targets.csv",
+      "sha256": "a3ca7df32d43ee7c683091162b1839ea8308d802bea3f2b437f4908d9cbcb079",
+      "bytes": 6685,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "raptor_raw.csv",
+      "sha256": "67d99d5e79ae48c43430bcd14b27b543ddeae7d68b38d176df5f02adf699cd28",
+      "bytes": 11243,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "raptor224_raw.csv",
+      "sha256": "5038179f9e2d427053599bddf4215b70aab734f8b38c3604744681d29c196dd5",
+      "bytes": 11214,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "ours_sub.csv",
+      "sha256": "acf62f8b86b68be890484d1ffa2eafcb3274d0604ccaa4dc7fd70a9e6ae96ca6",
+      "bytes": 13032,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "_own.csv",
+      "sha256": "3bfa54a1291cb73131b0eba48b38dab77d7d202fb12fc3ad8bf1a24aa1de7c45",
+      "bytes": 11366,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "v16_royalacecat_raw.csv",
+      "sha256": "dec4630cb50a8088475ebd293f0485cab74834a07ac6024a92c7974224b763c1",
+      "bytes": 11289,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "v16_syouyatobita_g233_raw.csv",
+      "sha256": "f97b21b2c91f77d73619b52fc35d960c896ac56a74cfe9311a24e9040163ca14",
+      "bytes": 11220,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "v16_kawaharataishi_swa_raw.csv",
+      "sha256": "e215f36b874f37d30bde39004a4e8dfce4cc58ceb690196dceb61261e9a12d9d",
+      "bytes": 11406,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "v16_tbongc_raw.csv",
+      "sha256": "ae69228bac99c3dba124b0ba36907237afc09c7233c5d0140f8b29feda2d67f1",
+      "bytes": 11544,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "v16_baseline_gold_predictions.csv",
+      "sha256": "a9d96eab84e7440db98c191ec9baab3469c8421790fffc6ab833de3d51fb4a49",
+      "bytes": 16705,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "v16_group_gold_predictions.csv",
+      "sha256": "0e22e41308cc33ffb8a1d3b6ee28992a7b089fbf797f9f56b25d56a4e082bead",
+      "bytes": 16969,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "v16_spec.json",
+      "sha256": "582225d27b9e9add90dba1d0ec70731b83309824e31b5ab6028f4a4ad01a6165",
+      "bytes": 7467,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "v16_validation_decision.json",
+      "sha256": "31f7454498a533a1c518a93f694b96cff1395cadcda6a97bb52e80c76fc5202c",
+      "bytes": 12946,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    },
+    {
+      "filename": "_own.csv.quality.csv",
+      "sha256": "0fbc3b2ab2ad241dc92f6bdcf4d7b8bdb5e3611604ce6321bd768d3ceb204561",
+      "bytes": 4090,
+      "source": "https://www.kaggle.com/code/andyyyyaa/rsna-knee-v16-gold58-weight-screen",
+      "redistributed": false
+    }
+  ],
+  "raw_data_published": false,
+  "patient_identifiers_published": false
+}

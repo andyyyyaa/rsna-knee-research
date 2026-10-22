@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "public_aggregate_only": true,
+  "text_files_checked": 47,
+  "raw_prediction_or_weight_files": 0,
+  "private_uid_or_credential_matches": 0,
+  "all_local_markdown_links_resolve": true,
+  "main_variants": 18,
+  "per_class_rows": 216,
+  "executed_code_cells": 7,
+  "saved_figure_outputs": 6,
+  "numeric_table_reconciliation": "PASS",
+  "limitation": "Pattern scan supplements an explicit file review; it is not a guarantee about all possible secret formats"
+}
