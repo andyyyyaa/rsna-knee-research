@@ -1,0 +1,12 @@
+# Next independent experiment: proposed, not executed
+
+This protocol lists what remains necessary to turn the retrospective findings into stronger evidence. None of the measurements below are claimed as completed.
+
+1. Obtain a legitimate stable patient identifier plus site/scanner metadata, and an auditable training membership manifest for every checkpoint. Group all studies from one patient together. If training overlap cannot be ruled out, replace the affected checkpoints or label evaluation as potentially contaminated.
+2. Reserve an untouched patient- and preferably site-disjoint test cohort. Gold58 must remain development data. Lock the model choice, coefficients, error categories and primary comparison before accessing the new test labels.
+3. Compare the complete V13/V15 recipe, removal of R6, removal of 224, removal of Reader, and the fixed SWA recipe. Do not tune an ensemble on the new test cohort. Distinguish the four-fold R6 and three-fold Reader from genuinely single-checkpoint arms.
+4. Estimate per-class and macro AUC uncertainty with patient-cluster paired bootstrap. Choose operating thresholds on a separate calibration cohort, then report Recall/specificity and calibration on the untouched test cohort. Prespecify how to handle rare labels and unavailable confidence intervals.
+5. Run actual image-space perturbations with fixed seeds and explicit severity: relative Gaussian noise, multiplicative intensity changes, and downsample/upsample resolution degradation. Rerun all models on the perturbed images; adding noise to predicted scores is not an image-robustness experiment. Keep the same cases and labels for paired comparisons. Document how intensity normalization may remove a perturbation.
+6. Measure end-to-end runtime on the same representative studies and hardware, with identical warm-up, cache state, precision, batch size and synchronization. Include startup, preprocessing, GPU work and serialization. Record both peak CUDA allocated and reserved memory for every worker, repeated-run spread and fallbacks. Do not extrapolate a three-example smoke test as full-test runtime.
+7. Have a qualified annotator review a de-identified, authorized sample of false positives/negatives for prespecified imaging patterns. Current aggregate FP/FN counts alone do not explain radiological failure mechanisms.
+8. Report every fixed comparison and retain negative results. Keep prospective test estimates separate from the current selection-conditioned results.
